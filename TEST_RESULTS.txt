@@ -1,0 +1,19 @@
+.....s..........                                                         [100%]
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.13.5-final-0 ________________
+
+Name                                  Stmts   Miss Branch BrPart  Cover   Missing
+---------------------------------------------------------------------------------
+src/bezrealitky_scraper/cli.py           38      7      4      2    79%   34->37, 52-57, 64
+src/bezrealitky_scraper/exporter.py     167      3     64      2    98%   45-46, 178
+src/bezrealitky_scraper/fetcher.py       48      5     10      2    88%   46, 49, 56-57, 68
+src/bezrealitky_scraper/models.py        47      5      4      1    88%   43, 56-59
+src/bezrealitky_scraper/parser.py       246     36    138     29    80%   112, 128, 135, 159, 177->176, 184->187, 194, 199, 201->208, 203, 205->207, 216, 220->213, 229-232, 238->234, 248->241, 257, 267->262, 282, 286, 297, 299, 304-312, 324-325, 334, 336, 345->343, 350, 357-360, 400
+src/bezrealitky_scraper/scraper.py       41      1     14      3    93%   27->30, 42->41, 62
+src/bezrealitky_scraper/utils.py         51      6     16      2    88%   32-34, 38, 44-45
+---------------------------------------------------------------------------------
+TOTAL                                   641     63    250     41    87%
+
+1 file skipped due to complete coverage.
+Required test coverage of 85.0% reached. Total coverage: 86.98%
+15 passed, 1 skipped in 0.58s

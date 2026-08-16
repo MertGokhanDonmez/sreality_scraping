@@ -1,0 +1,24 @@
+# Secrets
+.env
+
+# Virtualenv
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Generated output
+*.xlsx
+
+# OS
+.DS_Store

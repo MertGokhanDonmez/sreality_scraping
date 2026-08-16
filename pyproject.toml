@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bezrealitky-excel-scraper"
+version = "1.0.0"
+description = "Export all public Bezrealitky search results and listing details to Excel"
+requires-python = ">=3.10"
+dependencies = [
+  "beautifulsoup4>=4.12",
+  "httpx[http2]>=0.27",
+  "lxml>=5.0",
+  "xlsxwriter>=3.2",
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest>=8.0",
+  "pytest-cov>=5.0",
+]
+
+[project.scripts]
+bezrealitky-export = "bezrealitky_scraper.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --disable-warnings --strict-markers"
+markers = [
+  "live: reaches the public Bezrealitky website; disabled unless RUN_LIVE_TESTS=1",
+]
+
+[tool.coverage.run]
+branch = true
+source = ["bezrealitky_scraper"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+fail_under = 85

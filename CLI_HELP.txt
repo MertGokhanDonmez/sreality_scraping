@@ -1,0 +1,19 @@
+usage: bezrealitky-export [-h] [--url URL] [--output OUTPUT] [--delay DELAY]
+                          [--timeout TIMEOUT] [--retries RETRIES]
+                          [--max-pages MAX_PAGES]
+                          [--max-listings MAX_LISTINGS]
+
+Export every public listing from a Bezrealitky search URL to an Excel
+workbook.
+
+options:
+  -h, --help            show this help message and exit
+  --url URL             Bezrealitky search-result URL
+  --output OUTPUT       Output .xlsx path
+  --delay DELAY         Delay between requests in seconds
+  --timeout TIMEOUT     HTTP timeout in seconds
+  --retries RETRIES     Retries per page
+  --max-pages MAX_PAGES
+                        Optional test limit
+  --max-listings MAX_LISTINGS
+                        Optional test limit
